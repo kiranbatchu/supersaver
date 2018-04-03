@@ -9,21 +9,17 @@
 <ion-content text-center>
 <h2 class="msg0">I want to save</h2>
     <div>
-      <button class="center" ion-button style="text-transform: none;">$ 400 </button>
-       <button class="center" ion-button style="text-transform: none;"> By April 1 </button>
+      <button class="button center" style="width:20%" ion-button color="secondary">$400</button>
+      <button class="button center" style="width:40%" ion-button color="primary"> By April 1 </button>
      </div>
-     <div class="box"></div>
-     <BR>
-      <BR>
-      <BR>
-      <BR>
-      <BR>
-      <BR>
-      <BR>
-      <BR>
+     <ion-card>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
       <BR>
       
-<ion-grid>
+<ion-grid color="primary">
   <ion-row>
     <ion-col>
 
@@ -50,7 +46,7 @@
 </ion-grid>
 
 <div>
-  <button class="center" ion-button style="text-transform: none;">Start Saving</button>
+  <button style="width:98%" ion-button>Start Saving</button>
 </div>
 <div style="height:50"></div>
 </ion-content>
