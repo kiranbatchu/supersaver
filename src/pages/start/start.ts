@@ -28,8 +28,17 @@ export class StartPage {
             type: 'line',
 	    options: { 
 		legend: { display: false }, 
+		gridLines: {display:false},  
 		tooltips: { enabled: false },
-		scales: { yAxes: [{ ticks: { display: false } }] }
+		scales: { yAxes: [{
+          gridLines: {display:false},
+		  ticks: { display: false } }],
+ xAxes: [{
+          gridLines: {display:false},
+		  ticks: { display: false } }]
+
+
+		   }
 	    },
             data: {
                 labels: ["", "", ""],
@@ -43,12 +52,12 @@ export class StartPage {
                         borderDash: [],
                         borderDashOffset: 0.0,
                         borderJoinStyle: 'miter',
-                        pointBorderColor: "rgba(31,73,125,1)",
+                       
 		     	pointColor: "rgba(31,73,125,1)",
 		     	pointHighlightFill: "#1f497d",
 		     	pointFill: "#1f497d",
                         pointBackgroundColor: "#1f497d",
-                        pointBorderWidth: 1,
+                        pointBorderWidth: 0,
                         pointHoverRadius: 5,
                         pointHoverBackgroundColor: "rgba(31,73,125,1)",
                         pointHoverBorderColor: "rgba(31,73,125,1)",
@@ -56,7 +65,7 @@ export class StartPage {
                         pointRadius: 10,
                         pointHitRadius: 10,
                         data: [65, 59, 80],
-                        spanGaps: false,
+                        spanGaps: false
                     }
                 ]
             }
