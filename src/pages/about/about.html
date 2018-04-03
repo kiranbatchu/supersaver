@@ -5,8 +5,7 @@
     <ion-title><div>Savings</div>
     </ion-title>
   </ion-navbar>
-  <ion-input type="text" [(ngModel)]="wholefoods" readonly="true"  placeholder="Text Input" placeholder="Text Input" color="white" value="Savings: $34.00" style=" font-weight: bold;
-  font-size: 20px;"></ion-input>
+  <ion-input type="text" [ngModel]="formattedMsg" color="white" style="font-weight: bold; font-size: 20px;"></ion-input>
 
 </ion-header>
 
@@ -16,7 +15,7 @@
 
 <ion-row style="padding-top:30px;">
     <ion-col style="width:50%;">
-      <ion-range min="0" max="100" pin="true"  ></ion-range>
+      <ion-range min="0" max="100" pin="true" (ionChange)="wholeFoodsChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
       <h2 class="msg0">Spend $5 less a week at Whole Foods</h2>
@@ -25,7 +24,7 @@
   
 <ion-row>
     <ion-col style="width:50%">
-      <ion-range min="0" max="100" pin="true"  ></ion-range>
+      <ion-range min="0" max="100" pin="true" (ionChange)="uberChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
      <h2 class="msg0">Take one less Uber a month</h2>
@@ -34,7 +33,7 @@
 
 <ion-row>
     <ion-col style="width:50%">
-      <ion-range min="0" max="100" pin="true" ></ion-range>
+      <ion-range min="0" max="100" pin="true" (ionChange)="salonChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
        <h2 class="msg0">Keep salon budget as minimum as possible</h2>
@@ -43,7 +42,7 @@
 
 <ion-row>
     <ion-col style="width:50%">
-      <ion-range min="0" max="100" pin="true" ></ion-range>
+      <ion-range min="0" max="100" pin="true" (ionChange)="restChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
       <h2 class="msg0">Spend $7.50 less a week at restaurants</h2>
@@ -52,7 +51,7 @@
 
 <ion-row>
     <ion-col style="width:50%">
-      <ion-range min="0" max="100" pin="true" ></ion-range>
+      <ion-range min="0" max="100" pin="true" (ionChange)="retailChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
       <h2 class="msg0">Spend $7.50 less a week on retail</h2>
