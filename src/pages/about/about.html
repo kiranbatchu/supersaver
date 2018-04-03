@@ -1,11 +1,69 @@
+
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
+<ion-navbar>
+    <ion-title><div>Savings</div>
     </ion-title>
   </ion-navbar>
+  <ion-input type="text" [(ngModel)]="wholefoods" readonly="true"  placeholder="Text Input" placeholder="Text Input" color="white" value="Savings: $34.00" style=" font-weight: bold;
+  font-size: 20px;"></ion-input>
+
 </ion-header>
 
-<ion-content padding>
 
+<ion-content padding="false">
+<ion-grid>
+
+<ion-row style="padding-top:30px;">
+    <ion-col style="width:50%;">
+      <ion-range min="0" max="100" pin="true"  ></ion-range>
+    </ion-col>
+     <ion-col style="width:50%">
+      <h2 class="msg0">Spend $5 less a week at Whole Foods</h2>
+    </ion-col>
+</ion-row>   
+  
+<ion-row>
+    <ion-col style="width:50%">
+      <ion-range min="0" max="100" pin="true"  ></ion-range>
+    </ion-col>
+     <ion-col style="width:50%">
+     <h2 class="msg0">Take one less Uber a month</h2>
+    </ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col style="width:50%">
+      <ion-range min="0" max="100" pin="true" ></ion-range>
+    </ion-col>
+     <ion-col style="width:50%">
+       <h2 class="msg0">Keep salon budget as minimum as possible</h2>
+    </ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col style="width:50%">
+      <ion-range min="0" max="100" pin="true" ></ion-range>
+    </ion-col>
+     <ion-col style="width:50%">
+      <h2 class="msg0">Spend $7.50 less a week at restaurants</h2>
+    </ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col style="width:50%">
+      <ion-range min="0" max="100" pin="true" ></ion-range>
+    </ion-col>
+     <ion-col style="width:50%">
+      <h2 class="msg0">Spend $7.50 less a week on retail</h2>
+    </ion-col>
+</ion-row>
+</ion-grid>
+<div style="padding-left:50px">
+<div>
+  <button class="center" ion-button style="text-transform: none;">440</button> Estimated Savings Have Fun in Paris !! 
+</div>
+<div> </div>
+</div>
 </ion-content>
+

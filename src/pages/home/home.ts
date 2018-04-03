@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  handleTrySuperSaver() {
+      console.log('Handle super saver request ...');
+  }
+
 }
