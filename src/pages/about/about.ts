@@ -47,6 +47,7 @@ export class AboutPage {
 
   get formattedRetailMsg():string {
         var rate = Math.round(this.retailDiscount/7);
+        console.log("rate"+rate   );
         return ("Spend $" + rate + " less a week on retail");
   }
 
@@ -63,21 +64,21 @@ export class AboutPage {
     console.log("Whole Foods: " + event.value);
     this.wholefoodDiscount = event.value;	
     this.total = this.wholefoodDiscount + this.uberDiscount + this.salonDiscount + this.restDiscount + this.retailDiscount;
-    this.random+=1+this.total;
+    this.random=4+this.total;
   }
 
   uberChanged(event) {
     console.log("Uber: " + event.value);
     this.uberDiscount = event.value;	
     this.total = this.wholefoodDiscount + this.uberDiscount + this.salonDiscount + this.restDiscount + this.retailDiscount;
-    this.random+=1+this.total;
+    this.random=2+this.total;
   }
 
   salonChanged(event) {
     console.log("Salon: " + event.value);
     this.salonDiscount = event.value;	
     this.total = this.wholefoodDiscount + this.uberDiscount + this.salonDiscount + this.restDiscount + this.retailDiscount;
-    this.random=1+this.total;
+    this.random=3+this.total;
   }
 
   restChanged(event) {
@@ -89,8 +90,8 @@ export class AboutPage {
 
   retailChanged(event) {
     console.log("Retail: " + event.value);
-    this.restDiscount = event.value;	
-    this.total = this.wholefoodDiscount + this.uberDiscount + this.salonDiscount + this.restDiscount + this.retailDiscount;
+    this.retailDiscount = event.value;	
+    this.total = this.wholefoodDiscount + this.uberDiscount + this.salonDiscount + this.retailDiscount;
     this.random=1+this.total;
   }
 
