@@ -5,7 +5,7 @@
     <ion-title><div>Savings</div>
     </ion-title>
   </ion-navbar>
-  <ion-input type="text" [ngModel]="formattedMsg" readonly="true" color="white" style="font-weight: bold; font-size: 20px;"></ion-input>
+  <ion-input type="text" [ngModel]="formattedMsg" readonly="true" color="white" style="font-weight: bold; font-size: 10px;"></ion-input>
 
 </ion-header>
 
@@ -18,7 +18,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="wholeFoodsChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-	<ion-textarea type="text" [ngModel]="formattedWholeFoodsMsg" readonly="true" style="font-weight: bold; font-size: 20px;"></ion-textarea>
+	<ion-textarea type="text" [ngModel]="formattedWholeFoodsMsg" readonly="true" style="font-weight: bold; font-size: 10px;"></ion-textarea>
     </ion-col>
 </ion-row>   
   
@@ -27,7 +27,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="uberChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-	<ion-textarea type="text" [ngModel]="formattedUberMsg" readonly="true" style="font-weight: bold; font-size: 20px;"></ion-textarea>
+	<ion-textarea type="text" [ngModel]="formattedUberMsg" readonly="true" style="font-weight: bold; font-size: 10px;"></ion-textarea>
     </ion-col>
 </ion-row>
 
@@ -36,7 +36,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="salonChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-	<ion-textarea type="text" [ngModel]="formattedSalonMsg" readonly="true" value="Keep salon budget as minimum as possible" style="font-weight: bold; font-size: 20px;"></ion-textarea>
+	<ion-textarea type="text" [ngModel]="formattedSalonMsg" readonly="true" value="Keep salon budget as minimum as possible" style="font-weight: bold; font-size: 10px;"></ion-textarea>
     </ion-col>
 </ion-row>
 
@@ -45,7 +45,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="restChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-	<ion-textarea type="text" [ngModel]="formattedRestMsg" readonly="true" style="font-weight: bold; font-size: 20px;"></ion-textarea>
+	<ion-textarea type="text" [ngModel]="formattedRestMsg" readonly="true" style="font-weight: bold; font-size: 10px;"></ion-textarea>
     </ion-col>
 </ion-row>
 
@@ -54,13 +54,13 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="retailChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-	<ion-textarea type="text" [ngModel]="formattedRetailMsg" readonly="true" style="font-weight: bold; font-size: 20px;"></ion-textarea>
+	<ion-textarea type="text" [ngModel]="formattedRetailMsg" readonly="true" style="font-weight: bold; font-size: 10px;"></ion-textarea>
     </ion-col>
 </ion-row>
 </ion-grid>
 <div >
 <div> 
-   <ion-textarea type="text" [ngModel]="formattedMsg2" color="white" style="font-weight: bold; font-size: 30px; color:#00BFFF;word-break: break-all; word-wrap: break-word;"> </ion-textarea> 
+   <ion-textarea type="text" [ngModel]="formattedMsg2" color="white" style="font-weight: bold; font-size: 20px; color:#00BFFF;word-break: break-all; word-wrap: break-word;"> </ion-textarea> 
 </div>
 <div> </div>
 </div>
