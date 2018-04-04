@@ -5,7 +5,7 @@
     <ion-title><div>Savings</div>
     </ion-title>
   </ion-navbar>
-  <ion-input type="text" [ngModel]="formattedMsg" color="white" style="font-weight: bold; font-size: 20px;"></ion-input>
+  <ion-input type="text" [ngModel]="formattedMsg" readonly="true" color="white" style="font-weight: bold; font-size: 20px;"></ion-input>
 
 </ion-header>
 
@@ -18,7 +18,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="wholeFoodsChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-      <h2 class="msg0">Spend $5 less a week at Whole Foods</h2>
+	<ion-input type="text" [ngModel]="formattedWholeFoodsMsg" readonly="true"></ion-input>
     </ion-col>
 </ion-row>   
   
@@ -27,7 +27,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="uberChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-     <h2 class="msg0">Take one less Uber a month</h2>
+	<ion-input type="text" [ngModel]="formattedUberMsg" readonly="true"></ion-input>
     </ion-col>
 </ion-row>
 
@@ -45,7 +45,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="restChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-      <h2 class="msg0">Spend $7.50 less a week at restaurants</h2>
+	<ion-input type="text" [ngModel]="formattedRestMsg" readonly="true"></ion-input>
     </ion-col>
 </ion-row>
 
@@ -54,7 +54,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="retailChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-      <h2 class="msg0">Spend $7.50 less a week on retail</h2>
+	<ion-input type="text" [ngModel]="formattedRetailMsg" readonly="true"></ion-input>
     </ion-col>
 </ion-row>
 </ion-grid>

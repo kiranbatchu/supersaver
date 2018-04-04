@@ -20,6 +20,26 @@ export class AboutPage {
 	return "Savings: $" + this.total;
   }
 
+  get formattedWholeFoodsMsg():string {
+	var rate = Math.round((this.wholefoodDiscount/20));
+	return ("Spend $" + rate + " less a week at Whole Foods");
+  }
+
+  get formattedUberMsg():string {
+        var rate = Math.round((this.uberDiscount/33));
+        return ("Take " + rate + " less Uber a month");
+  }
+
+  get formattedRestMsg():string {
+        var rate = Math.round(this.restDiscount/7);
+        return ("Spend $" + rate + " less a week at restaurants");
+  }
+
+  get formattedRetailMsg():string {
+        var rate = Math.round(this.retailDiscount/7);
+        return ("Spend $" + rate + " less a week on retail");
+  }
+
   get formattedMsg2():string {
    return "Estimated Savings Have Fun in Paris !! " + this.random;
   }
