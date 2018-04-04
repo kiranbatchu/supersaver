@@ -36,7 +36,7 @@
       <ion-range min="0" max="100" pin="true" (ionChange)="salonChanged($event)"></ion-range>
     </ion-col>
      <ion-col style="width:50%">
-       <h2 class="msg0">Keep salon budget as minimum as possible</h2>
+	<ion-input type="text" [ngModel]="formattedSalonMsg" readonly="true" value="Keep salon budget as minimum as possible"></ion-input>
     </ion-col>
 </ion-row>
 

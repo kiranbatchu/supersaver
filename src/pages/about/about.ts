@@ -30,6 +30,16 @@ export class AboutPage {
         return ("Take " + rate + " less Uber a month");
   }
 
+  get formattedSalonMsg():string {
+        var msg1 = "Keep salon budget as minimum as possible";
+        var msg2 = "Keep salon budget at a moderate level ";
+	if (this.salonDiscount > 50) {
+	   return msg1;
+	} else {
+	   return msg2;
+	}
+  }
+
   get formattedRestMsg():string {
         var rate = Math.round(this.restDiscount/7);
         return ("Spend $" + rate + " less a week at restaurants");
